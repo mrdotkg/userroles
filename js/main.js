@@ -13,6 +13,9 @@ function makeElement(el){
   return newNode;
 }
 $( document ).ready(function() {
+  $(".add-group").click(function(){
+      //add the ajax and toast here
+  });
   $(".check-all").click(function(){
     $('ul'+$(this).data('target'))
       .find('input:checkbox')
