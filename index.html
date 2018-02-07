@@ -1,136 +1,136 @@
-  <!doctype html>
-  <html lang="en">
-	<head>
-	  <!-- Required meta tags -->
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!doctype html>
+		<html lang="en">
+		<head>
+			<!-- Required meta tags -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	  <!-- Bootstrap CSS -->
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-		
-		<!-- custom css -->
-	  <link rel="stylesheet" href="css/style.css" >
-		
-		<title>Usre & Groups</title>
-	</head>
-	<body>
-			<nav class="text-center"  >
-				<a href="#">
-					<img src="images/man-with-tie.svg"> 
-				</a>
-			</nav>
-	  	<div class="container">
-			<!-- Content here -->
-			<div class="row dev-user-pannel">
-				<div class="col-8 groups">
-					<h1>Groups</h1>
-					
-					<!-- add group button -->
-					<div class="input-group" style="margin-bottom: 0.5rem;">
-						<input type="text" class="form-control" placeholder="new group name" aria-label="new group name" aria-describedby="basic-addon2">
-						<div class="input-group-append">
-							<a class="add-group btn btn-outline-secondary"> 
-								<i class="fa fa-plus" aria-hidden="true"></i>
-								Add Group
-							</a>
+			<!-- Bootstrap CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+			<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+			
+			<!-- custom css -->
+			<link rel="stylesheet" href="css/style.css" >
+			
+			<title>Usre & Groups</title>
+		</head>
+		<body>
+				<nav class="text-center"  >
+					<a href="#">
+						<img src="images/man-with-tie.svg"> 
+					</a>
+				</nav>
+				<div class="container">
+				<!-- Content here -->
+				<div class="row dev-user-pannel">
+					<div class="col-8 groups">
+						<h1>Groups</h1>
+						
+						<!-- add group button -->
+						<div class="input-group" style="margin-bottom: 0.5rem;">
+							<input type="text" class="form-control" placeholder="new group name" aria-label="new group name" aria-describedby="basic-addon2">
+							<div class="input-group-append">
+								<a class="add-group btn btn-outline-secondary"> 
+									<i class="fa fa-plus" aria-hidden="true"></i>
+									Add Group
+								</a>
+							</div>
 						</div>
+						
+						<!-- list of groups -->
+						<div id="accordion">
+								<div class="card">
+										<div class="card-header" id="headingOne">
+											<h5 class="mb-0">
+												<input type="checkbox" title="check all" class="check-all" data-target="#admin">
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													Admin
+												</button>
+											</h5>
+										</div>
+								
+										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+											<div class="card-body">
+												<h3>Users in this group</h3>
+												<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="admin" class="group-user-list list-group list-group-flush"></ul>
+											</div>
+										</div>
+								</div>
+									
+								<div class="card">
+										<div class="card-header" id="headingTwo">
+											<h5 class="mb-0">
+												<input type="checkbox" title="check all" class="check-all" data-target="#developer">
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+													Developer
+												</button>
+											</h5>
+										</div>
+								
+										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+											<div class="card-body">
+												<h3>Users in this group</h3>
+												<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="developer" class="group-user-list list-group list-group-flush"></ul>
+											</div>
+										</div>
+								</div>
+									
+								<div class="card">
+										<div class="card-header" id="headingThree">
+											<h5 class="mb-0">
+												<input type="checkbox" title="check all" class="check-all" data-target="#marketing">
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+													Marketing
+												</button>
+											</h5>
+										</div>
+								
+										<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+											<div class="card-body">
+												<h3>Users in this group</h3>
+												<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="marketing" class="group-user-list list-group list-group-flush"></ul>
+											</div>
+										</div>
+								</div>
+									
+							</div>
+						
 					</div>
-					
-					<!-- list of groups -->
-					<div id="accordion">
-							<div class="card">
-									<div class="card-header" id="headingOne">
-										<h5 class="mb-0">
-											<input type="checkbox" title="check all" class="check-all" data-target="#admin">
-											<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-												Admin
-											</button>
-										</h5>
-									</div>
-							
-									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-										<div class="card-body">
-											<h3>Users in this group</h3>
-											<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="admin" class="group-user-list list-group list-group-flush"></ul>
-										</div>
-									</div>
-							</div>
-								
-							<div class="card">
-									<div class="card-header" id="headingTwo">
-										<h5 class="mb-0">
-											<input type="checkbox" title="check all" class="check-all" data-target="#developer">
-											<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-												Developer
-											</button>
-										</h5>
-									</div>
-							
-									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-										<div class="card-body">
-											<h3>Users in this group</h3>
-											<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="developer" class="group-user-list list-group list-group-flush"></ul>
-										</div>
-									</div>
-							</div>
-								
-							<div class="card">
-									<div class="card-header" id="headingThree">
-										<h5 class="mb-0">
-											<input type="checkbox" title="check all" class="check-all" data-target="#marketing">
-											<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-												Marketing
-											</button>
-										</h5>
-									</div>
-							
-									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-										<div class="card-body">
-											<h3>Users in this group</h3>
-											<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="marketing" class="group-user-list list-group list-group-flush"></ul>
-										</div>
-									</div>
-							</div>
-								
-						</div>
-					
+					<div class="col-4 user">
+						<h1>Users</h1>
+						<p style="margin-bottom:1.5em;" class="text-muted">Drag users from below to the groups on the left</p>					
+						<ul id="user-list" class="list-group list-group-flush">
+								<li class="list-group-item">
+									<span>Misael Kiehn</span>
+								</li>
+								<li class="list-group-item">
+									<span>Moises Parker</span>
+								</li>
+								<li class="list-group-item">
+									<span>Kaci O'Keefe</span>
+								</li>
+								<li class="list-group-item">
+									<span>Kareem Prohaska</span>
+								</li>
+								<li class="list-group-item">
+									<span>Naomie Torphy PhD</span>
+								</li>
+								<li class="list-group-item">
+									<span>Kimberly Veum</span>
+								</li>
+								<li class="list-group-item">
+									<span>Heloise Wintheiser</span>
+								</li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-4 user">
-					<h1>Users</h1>
-					<p style="margin-bottom:1.5em;" class="text-muted">Drag users from below to the groups on the left</p>					
-					<ul id="user-list" class="list-group list-group-flush">
-							<li class="list-group-item">
-								<span>Misael Kiehn</span>
-							</li>
-							<li class="list-group-item">
-								<span>Moises Parker</span>
-							</li>
-							<li class="list-group-item">
-								<span>Kaci O'Keefe</span>
-							</li>
-							<li class="list-group-item">
-								<span>Kareem Prohaska</span>
-							</li>
-							<li class="list-group-item">
-								<span>Naomie Torphy PhD</span>
-							</li>
-							<li class="list-group-item">
-								<span>Kimberly Veum</span>
-							</li>
-							<li class="list-group-item">
-								<span>Heloise Wintheiser</span>
-							</li>
-					</ul>
 				</div>
-			</div>
-	  	</div>
 
-	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
-		<!-- custom js -->
-		<script src="js/main.js"></script>
-	</body>
-	</html>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
+			<!-- custom js -->
+			<script src="js/main.js"></script>
+		</body>
+		</html>
