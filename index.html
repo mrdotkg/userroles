@@ -8,10 +8,18 @@
 	  <!-- Bootstrap CSS -->
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	  <title>Hello, world!</title>
+		
+		<!-- custom css -->
+	  <link rel="stylesheet" href="css/style.css" >
+		
+		<title>Hello, world!</title>
 	</head>
 	<body>
-
+			<nav class="text-center"  >
+				<a href="#">
+					<img src="images/man-with-tie.svg"> 
+				</a>
+			</nav>
 	  	<div class="container">
 			<!-- Content here -->
 			<div class="row dev-user-pannel">
@@ -30,84 +38,87 @@
 					</div>
 					
 					<!-- list of groups -->
-					<div id="accordion top-buffer">
+					<div id="accordion">
 							<div class="card">
-								<div class="card-header" id="headingOne">
-									<h5 class="mb-0">
-										<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-											Admin
-										</button>
-									</h5>
-								</div>
-						
-								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-									<div class="card-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									<div class="card-header" id="headingOne">
+										<h5 class="mb-0">
+											<input type="checkbox" title="check all" class="check-all" data-target="#admin">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												Admin
+											</button>
+										</h5>
 									</div>
-								</div>
+							
+									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+										<div class="card-body">
+											<h3>Users in this group</h3>
+											<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="admin" class="group-user-list list-group list-group-flush"></ul>
+										</div>
+									</div>
 							</div>
+								
 							<div class="card">
-								<div class="card-header" id="headingTwo">
-									<h5 class="mb-0">
-										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-											Developer
-										</button>
-									</h5>
-								</div>
-								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-									<div class="card-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									<div class="card-header" id="headingTwo">
+										<h5 class="mb-0">
+											<input type="checkbox" title="check all" class="check-all" data-target="#developer">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+												Developer
+											</button>
+										</h5>
 									</div>
-								</div>
+							
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+										<div class="card-body">
+											<h3>Users in this group</h3>
+											<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="developer" class="group-user-list list-group list-group-flush"></ul>
+										</div>
+									</div>
 							</div>
+								
 							<div class="card">
-								<div class="card-header" id="headingThree">
-									<h5 class="mb-0">
-											<input type="checkbox" title="check all">
-										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-											Marketing and sales
-										</button>
-									</h5>
-								</div>
-								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-									<div class="card-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									<div class="card-header" id="headingThree">
+										<h5 class="mb-0">
+											<input type="checkbox" title="check all" class="check-all" data-target="#marketing">
+											<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+												Marketing
+											</button>
+										</h5>
 									</div>
-								</div>
+							
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+										<div class="card-body">
+											<h3>Users in this group</h3>
+											<ul style="width:100%;min-height: 200px;overflow-y:scroll;" id="marketing" class="group-user-list list-group list-group-flush"></ul>
+										</div>
+									</div>
 							</div>
+								
 						</div>
 					
 				</div>
 				<div class="col-4 user">
 					<h1>Users</h1>
 					<p style="margin-bottom:1.5em;" class="text-muted">Drag users from below to the groups on the left</p>					
-					<ul class="list-group list-group-flush fa-ul">
+					<ul id="user-list" class="list-group list-group-flush">
 							<li class="list-group-item">
-								<i class="far fa-hand-rock"></i>
 								<span>Misael Kiehn</span>
 							</li>
 							<li class="list-group-item">
-								<i class="far fa-hand-rock"></i>
 								<span>Moises Parker</span>
 							</li>
 							<li class="list-group-item">
-								<i class="far fa-hand-rock"></i>
 								<span>Kaci O'Keefe</span>
 							</li>
 							<li class="list-group-item">
-								<i class="far fa-hand-rock"></i>
 								<span>Kareem Prohaska</span>
 							</li>
 							<li class="list-group-item">
-								<i class="far fa-hand-rock"></i>
 								<span>Naomie Torphy PhD</span>
 							</li>
 							<li class="list-group-item">
-								<i class="far fa-hand-rock"></i>
 								<span>Kimberly Veum</span>
 							</li>
 							<li class="list-group-item">
-								<i class="far fa-hand-rock"></i>
 								<span>Heloise Wintheiser</span>
 							</li>
 					</ul>
@@ -118,5 +129,8 @@
 	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
+		<!-- custom js -->
+		<script src="js/main.js"></script>
 	</body>
 	</html>
